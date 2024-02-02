@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: transparent;
+    transition: 0.3s;
+    border-radius: 2rem;
+}
+
+.timer {
+    background: #111;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 150px;
+    height: 160px;
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    filter: blur(0);
+}
+
+.hour,
+.minutes {
+    position: relative;
+}
+
+.hour::after,
+.minutes::after {
+    position: absolute;
+    content: '';
+    right: -10px;
+    top: 7px;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 7px #fff;
+    display: block;
+}
